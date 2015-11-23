@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Lei|Portfolio</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+    width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+    
+<style type="text/css">
+*{ margin:0; padding:0;}
+.nav-wrapper-fixed{ position:fixed; top:5px; width:100%;}
+.nav-wrapper-fixed .nav{width:700px; margin:0 auto;}
+.nav-wrapper-fixed .nav li{ float:left; width:130px; margin-right:10px; background:rgba(87, 65, 137, 0.3); text-align:center; font-family:"Brush Script Std"; height:24px; line-height:24px; list-style:none;}
+
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var nav=document.getElementById('nav');
+	var navFixed=document.getElementById('navFixed');
+	window.onscroll=function(){
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		document.title=scrollTop
+		if(scrollTop>nav.offsetTop){
+			navFixed.style.display='block';
+		}else if(scrollTop<nav.offsetTop){
+			navFixed.style.display='none';
+		}
+	}
+};
+</script>
+    
+</head>
+<body style="height:20px;">
+<div class="nav-wrapper">
+	<div class="nav" id="nav">
+		<ul>
+			
+		</ul>
+	</div>
+</div>
+<div class="nav-wrapper-fixed" id="navFixed" style="display:none;">
+	<div class="nav" id="nav">
+		<ul>
+          
+             <li><a href="home.html"><font color="white">HOME</font></a></li>
+			<li><a href="sketches.html"><font color="white">SKETCHINGS</font></a></li>
+			<li><a href="digital.html"><font color="white">DIGITAL ARTS</font></a></li>
+			<li><a href="handicraft.html"><font color="white">HANDICRAFTS</font></a></li>
+			<li><a href="aboutme.html"><font color="white">ABOUT ME</a></li>
+		</ul></font>
+	</div>
+</div>
+   
+</body>
+</html>
+<div>
+    
+  <map name="beachmap">
+<area alt="Handicrafts" title="Handicrafts" href="handicraft.html" shape="rect" coords="200,240,340,120">
+    <area href="digital.html" shape="rect" coords="1000,780,1200,940"
+      alt="Digital Arts" title="Digital Arts">
+       <area href="aboutme.html" shape="rect" coords="1100,460,1250,590"
+      alt="About Me" title="About Me">
+    <area href="sketches.html" shape="rect" coords="80,600,220,500"
+      alt="Sketchings" title="Sketchings">
+  </map>
+</div>
+<p><img src="image/IMG_8434.gif" alt="" usemap="#beachmap"></p>   
+
+</body>
+</html>
